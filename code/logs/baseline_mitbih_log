@@ -1,0 +1,252 @@
+Sender: LSF System <lsfadmin@lo-s4-032>
+Subject: Job 5190486: <Job2> in cluster <leonhard> Done
+
+Job <Job2> was submitted from host <lo-login-02> by user <cleclei> in cluster <leonhard> at Fri Mar 13 11:54:42 2020
+Job was executed on host(s) <lo-s4-032>, in queue <gpu.4h>, as user <cleclei> in cluster <leonhard> at Fri Mar 13 11:55:11 2020
+</cluster/home/cleclei> was used as the home directory.
+</cluster/home/cleclei/Project1/ECG_Heartbeat_Classification/code> was used as the working directory.
+Started at Fri Mar 13 11:55:11 2020
+Terminated at Fri Mar 13 12:06:56 2020
+Results reported at Fri Mar 13 12:06:56 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python baseline_mitbih.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   832.59 sec.
+    Max Memory :                                 2969 MB
+    Average Memory :                             2800.16 MB
+    Total Requested Memory :                     10000.00 MB
+    Delta Memory :                               7031.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                21
+    Run time :                                   729 sec.
+    Turnaround time :                            734 sec.
+
+The output (if any) follows:
+
+2020-03-13 11:55:16.400855: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-03-13 11:55:30.357910: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-03-13 11:55:30.419395: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:08:00.0
+2020-03-13 11:55:30.419476: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-03-13 11:55:30.422833: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-03-13 11:55:30.425427: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-03-13 11:55:30.426214: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-03-13 11:55:30.428752: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-03-13 11:55:30.430135: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-03-13 11:55:30.434929: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-13 11:55:30.441374: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-03-13 11:55:30.449693: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2199885000 Hz
+2020-03-13 11:55:30.449904: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x45dadf0 executing computations on platform Host. Devices:
+2020-03-13 11:55:30.449928: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2020-03-13 11:55:30.624469: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x45e2240 executing computations on platform CUDA. Devices:
+2020-03-13 11:55:30.624534: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): GeForce GTX 1080 Ti, Compute Capability 6.1
+2020-03-13 11:55:30.627327: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:08:00.0
+2020-03-13 11:55:30.627375: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-03-13 11:55:30.627399: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-03-13 11:55:30.627419: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-03-13 11:55:30.627437: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-03-13 11:55:30.627455: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-03-13 11:55:30.627473: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-03-13 11:55:30.627518: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-13 11:55:30.631557: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-03-13 11:55:30.631598: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-03-13 11:55:31.194317: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-03-13 11:55:31.194370: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-03-13 11:55:31.194385: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-03-13 11:55:31.199380: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10407 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:08:00.0, compute capability: 6.1)
+2020-03-13 11:55:35.943747: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-03-13 11:55:36.362137: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+Model: "model_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 187, 1)            0         
+_________________________________________________________________
+conv1d_1 (Conv1D)            (None, 183, 16)           96        
+_________________________________________________________________
+conv1d_2 (Conv1D)            (None, 179, 16)           1296      
+_________________________________________________________________
+max_pooling1d_1 (MaxPooling1 (None, 89, 16)            0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 89, 16)            0         
+_________________________________________________________________
+conv1d_3 (Conv1D)            (None, 87, 32)            1568      
+_________________________________________________________________
+conv1d_4 (Conv1D)            (None, 85, 32)            3104      
+_________________________________________________________________
+max_pooling1d_2 (MaxPooling1 (None, 42, 32)            0         
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 42, 32)            0         
+_________________________________________________________________
+conv1d_5 (Conv1D)            (None, 40, 32)            3104      
+_________________________________________________________________
+conv1d_6 (Conv1D)            (None, 38, 32)            3104      
+_________________________________________________________________
+max_pooling1d_3 (MaxPooling1 (None, 19, 32)            0         
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 19, 32)            0         
+_________________________________________________________________
+conv1d_7 (Conv1D)            (None, 17, 256)           24832     
+_________________________________________________________________
+conv1d_8 (Conv1D)            (None, 15, 256)           196864    
+_________________________________________________________________
+global_max_pooling1d_1 (Glob (None, 256)               0         
+_________________________________________________________________
+dropout_4 (Dropout)          (None, 256)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 64)                16448     
+_________________________________________________________________
+dense_2 (Dense)              (None, 64)                4160      
+_________________________________________________________________
+dense_3_mitbih (Dense)       (None, 5)                 325       
+=================================================================
+Total params: 254,901
+Trainable params: 254,901
+Non-trainable params: 0
+_________________________________________________________________
+Train on 78798 samples, validate on 8756 samples
+Epoch 1/1000
+ - 26s - loss: 0.3454 - acc: 0.9029 - val_loss: 0.2274 - val_acc: 0.9411
+
+Epoch 00001: val_acc improved from -inf to 0.94107, saving model to baseline_cnn_mitbih.h5
+Epoch 2/1000
+ - 22s - loss: 0.1960 - acc: 0.9455 - val_loss: 0.1457 - val_acc: 0.9608
+
+Epoch 00002: val_acc improved from 0.94107 to 0.96083, saving model to baseline_cnn_mitbih.h5
+Epoch 3/1000
+ - 22s - loss: 0.1491 - acc: 0.9597 - val_loss: 0.1267 - val_acc: 0.9675
+
+Epoch 00003: val_acc improved from 0.96083 to 0.96745, saving model to baseline_cnn_mitbih.h5
+Epoch 4/1000
+ - 22s - loss: 0.1295 - acc: 0.9648 - val_loss: 0.1336 - val_acc: 0.9653
+
+Epoch 00004: val_acc did not improve from 0.96745
+Epoch 5/1000
+ - 22s - loss: 0.1152 - acc: 0.9691 - val_loss: 0.1083 - val_acc: 0.9698
+
+Epoch 00005: val_acc improved from 0.96745 to 0.96985, saving model to baseline_cnn_mitbih.h5
+Epoch 6/1000
+ - 22s - loss: 0.1069 - acc: 0.9713 - val_loss: 0.0937 - val_acc: 0.9727
+
+Epoch 00006: val_acc improved from 0.96985 to 0.97270, saving model to baseline_cnn_mitbih.h5
+Epoch 7/1000
+ - 22s - loss: 0.0991 - acc: 0.9724 - val_loss: 0.0955 - val_acc: 0.9735
+
+Epoch 00007: val_acc improved from 0.97270 to 0.97350, saving model to baseline_cnn_mitbih.h5
+Epoch 8/1000
+ - 22s - loss: 0.0914 - acc: 0.9736 - val_loss: 0.0827 - val_acc: 0.9753
+
+Epoch 00008: val_acc improved from 0.97350 to 0.97533, saving model to baseline_cnn_mitbih.h5
+Epoch 9/1000
+ - 22s - loss: 0.0883 - acc: 0.9748 - val_loss: 0.0824 - val_acc: 0.9765
+
+Epoch 00009: val_acc improved from 0.97533 to 0.97647, saving model to baseline_cnn_mitbih.h5
+Epoch 10/1000
+ - 22s - loss: 0.0813 - acc: 0.9764 - val_loss: 0.0765 - val_acc: 0.9783
+
+Epoch 00010: val_acc improved from 0.97647 to 0.97830, saving model to baseline_cnn_mitbih.h5
+Epoch 11/1000
+ - 22s - loss: 0.0799 - acc: 0.9772 - val_loss: 0.0715 - val_acc: 0.9789
+
+Epoch 00011: val_acc improved from 0.97830 to 0.97887, saving model to baseline_cnn_mitbih.h5
+Epoch 12/1000
+ - 22s - loss: 0.0774 - acc: 0.9778 - val_loss: 0.0696 - val_acc: 0.9794
+
+Epoch 00012: val_acc improved from 0.97887 to 0.97944, saving model to baseline_cnn_mitbih.h5
+Epoch 13/1000
+ - 22s - loss: 0.0751 - acc: 0.9785 - val_loss: 0.0712 - val_acc: 0.9809
+
+Epoch 00013: val_acc improved from 0.97944 to 0.98093, saving model to baseline_cnn_mitbih.h5
+Epoch 14/1000
+ - 22s - loss: 0.0710 - acc: 0.9792 - val_loss: 0.0696 - val_acc: 0.9794
+
+Epoch 00014: val_acc did not improve from 0.98093
+Epoch 15/1000
+ - 22s - loss: 0.0694 - acc: 0.9798 - val_loss: 0.0649 - val_acc: 0.9801
+
+Epoch 00015: val_acc did not improve from 0.98093
+Epoch 16/1000
+ - 22s - loss: 0.0675 - acc: 0.9806 - val_loss: 0.0658 - val_acc: 0.9812
+
+Epoch 00016: val_acc improved from 0.98093 to 0.98116, saving model to baseline_cnn_mitbih.h5
+Epoch 17/1000
+ - 22s - loss: 0.0659 - acc: 0.9804 - val_loss: 0.0630 - val_acc: 0.9825
+
+Epoch 00017: val_acc improved from 0.98116 to 0.98253, saving model to baseline_cnn_mitbih.h5
+Epoch 18/1000
+ - 22s - loss: 0.0645 - acc: 0.9811 - val_loss: 0.0672 - val_acc: 0.9807
+
+Epoch 00018: val_acc did not improve from 0.98253
+Epoch 19/1000
+ - 22s - loss: 0.0640 - acc: 0.9810 - val_loss: 0.0827 - val_acc: 0.9781
+
+Epoch 00019: val_acc did not improve from 0.98253
+Epoch 20/1000
+ - 22s - loss: 0.0608 - acc: 0.9825 - val_loss: 0.0646 - val_acc: 0.9825
+
+Epoch 00020: val_acc did not improve from 0.98253
+
+Epoch 00020: ReduceLROnPlateau reducing learning rate to 0.00010000000474974513.
+Epoch 21/1000
+ - 22s - loss: 0.0450 - acc: 0.9862 - val_loss: 0.0518 - val_acc: 0.9854
+
+Epoch 00021: val_acc improved from 0.98253 to 0.98538, saving model to baseline_cnn_mitbih.h5
+Epoch 22/1000
+ - 23s - loss: 0.0399 - acc: 0.9874 - val_loss: 0.0498 - val_acc: 0.9847
+
+Epoch 00022: val_acc did not improve from 0.98538
+Epoch 23/1000
+ - 23s - loss: 0.0381 - acc: 0.9882 - val_loss: 0.0504 - val_acc: 0.9862
+
+Epoch 00023: val_acc improved from 0.98538 to 0.98618, saving model to baseline_cnn_mitbih.h5
+Epoch 24/1000
+ - 23s - loss: 0.0375 - acc: 0.9882 - val_loss: 0.0493 - val_acc: 0.9864
+
+Epoch 00024: val_acc improved from 0.98618 to 0.98641, saving model to baseline_cnn_mitbih.h5
+Epoch 25/1000
+ - 22s - loss: 0.0366 - acc: 0.9885 - val_loss: 0.0487 - val_acc: 0.9862
+
+Epoch 00025: val_acc did not improve from 0.98641
+Epoch 26/1000
+ - 20s - loss: 0.0358 - acc: 0.9885 - val_loss: 0.0497 - val_acc: 0.9870
+
+Epoch 00026: val_acc improved from 0.98641 to 0.98698, saving model to baseline_cnn_mitbih.h5
+Epoch 27/1000
+ - 20s - loss: 0.0340 - acc: 0.9893 - val_loss: 0.0485 - val_acc: 0.9864
+
+Epoch 00027: val_acc did not improve from 0.98698
+Epoch 28/1000
+ - 20s - loss: 0.0349 - acc: 0.9889 - val_loss: 0.0486 - val_acc: 0.9866
+
+Epoch 00028: val_acc did not improve from 0.98698
+Epoch 29/1000
+ - 20s - loss: 0.0329 - acc: 0.9895 - val_loss: 0.0495 - val_acc: 0.9861
+
+Epoch 00029: val_acc did not improve from 0.98698
+
+Epoch 00029: ReduceLROnPlateau reducing learning rate to 1.0000000474974514e-05.
+Epoch 30/1000
+ - 20s - loss: 0.0313 - acc: 0.9897 - val_loss: 0.0496 - val_acc: 0.9869
+
+Epoch 00030: val_acc did not improve from 0.98698
+Epoch 31/1000
+ - 20s - loss: 0.0303 - acc: 0.9900 - val_loss: 0.0492 - val_acc: 0.9869
+Using TensorFlow backend.
+
+Epoch 00031: val_acc did not improve from 0.98698
+Epoch 00031: early stopping
+Test f1 score : 0.9173218475058021 
+Test accuracy score : 0.9857025397405444 

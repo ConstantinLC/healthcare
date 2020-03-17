@@ -1,0 +1,2 @@
+#!/bin/bash
+bsub -R "rusage[ngpus_excl_p=1]" -J "Job2" -R "rusage[mem=10000]" -M 20000 -oo $1_log python $1.py 

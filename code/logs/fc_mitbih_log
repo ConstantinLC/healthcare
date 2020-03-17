@@ -1,0 +1,141 @@
+Sender: LSF System <lsfadmin@lo-s4-034>
+Subject: Job 5195113: <Job2> in cluster <leonhard> Done
+
+Job <Job2> was submitted from host <lo-login-02> by user <cleclei> in cluster <leonhard> at Fri Mar 13 15:11:19 2020
+Job was executed on host(s) <lo-s4-034>, in queue <gpu.4h>, as user <cleclei> in cluster <leonhard> at Fri Mar 13 15:11:23 2020
+</cluster/home/cleclei> was used as the home directory.
+</cluster/home/cleclei/Project1/ECG_Heartbeat_Classification/code> was used as the working directory.
+Started at Fri Mar 13 15:11:23 2020
+Terminated at Fri Mar 13 15:13:19 2020
+Results reported at Fri Mar 13 15:13:19 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python fc_mitbih.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   138.75 sec.
+    Max Memory :                                 2735 MB
+    Average Memory :                             2245.20 MB
+    Total Requested Memory :                     10000.00 MB
+    Delta Memory :                               7265.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                21
+    Run time :                                   135 sec.
+    Turnaround time :                            120 sec.
+
+The output (if any) follows:
+
+2020-03-13 15:11:27.960144: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-03-13 15:11:38.159080: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-03-13 15:11:38.239643: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:07:00.0
+2020-03-13 15:11:38.239724: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-03-13 15:11:38.263840: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-03-13 15:11:38.279745: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-03-13 15:11:38.287478: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-03-13 15:11:38.315421: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-03-13 15:11:38.324432: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-03-13 15:11:38.380697: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-13 15:11:38.388751: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-03-13 15:11:38.397532: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2199940000 Hz
+2020-03-13 15:11:38.397738: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x9f9dd10 executing computations on platform Host. Devices:
+2020-03-13 15:11:38.397788: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2020-03-13 15:11:38.613372: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x9fa5160 executing computations on platform CUDA. Devices:
+2020-03-13 15:11:38.613410: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): GeForce GTX 1080 Ti, Compute Capability 6.1
+2020-03-13 15:11:38.619685: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:07:00.0
+2020-03-13 15:11:38.619739: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-03-13 15:11:38.619766: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-03-13 15:11:38.619785: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-03-13 15:11:38.619803: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-03-13 15:11:38.619833: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-03-13 15:11:38.619851: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-03-13 15:11:38.619869: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-13 15:11:38.625764: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-03-13 15:11:38.626929: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-03-13 15:11:39.732426: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-03-13 15:11:39.732481: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-03-13 15:11:39.732495: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-03-13 15:11:39.741628: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10407 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:07:00.0, compute capability: 6.1)
+2020-03-13 15:11:43.181390: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+Model: "model_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 187, 1)            0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 187)               0         
+_________________________________________________________________
+pre_dense_1 (Dense)          (None, 100)               18800     
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 100)               0         
+_________________________________________________________________
+pre_dense_2 (Dense)          (None, 200)               20200     
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 200)               0         
+_________________________________________________________________
+pre_dense_3 (Dense)          (None, 200)               40200     
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 200)               0         
+_________________________________________________________________
+pre_dense_4 (Dense)          (None, 200)               40200     
+_________________________________________________________________
+dropout_4 (Dropout)          (None, 200)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 64)                12864     
+_________________________________________________________________
+dense_2 (Dense)              (None, 64)                4160      
+_________________________________________________________________
+dense_3_ptbdb (Dense)        (None, 1)                 65        
+=================================================================
+Total params: 136,489
+Trainable params: 136,489
+Non-trainable params: 0
+_________________________________________________________________
+Train on 78798 samples, validate on 8756 samples
+Epoch 1/1000
+ - 15s - loss: -4.0409e+14 - acc: 0.5755 - val_loss: -2.9668e+15 - val_acc: 0.6293
+
+Epoch 00001: val_acc improved from -inf to 0.62928, saving model to ./models/fc_mitbih.h5
+Epoch 2/1000
+ - 13s - loss: -4.3616e+16 - acc: 0.5918 - val_loss: -1.3966e+17 - val_acc: 0.6470
+
+Epoch 00002: val_acc improved from 0.62928 to 0.64698, saving model to ./models/fc_mitbih.h5
+Epoch 3/1000
+ - 13s - loss: -5.2530e+17 - acc: 0.5925 - val_loss: -1.1693e+18 - val_acc: 0.6440
+
+Epoch 00003: val_acc did not improve from 0.64698
+Epoch 4/1000
+ - 13s - loss: -2.7784e+18 - acc: 0.5934 - val_loss: -5.0480e+18 - val_acc: 0.6278
+
+Epoch 00004: val_acc did not improve from 0.64698
+Epoch 5/1000
+ - 13s - loss: -9.8395e+18 - acc: 0.5945 - val_loss: -1.6148e+19 - val_acc: 0.6331
+
+Epoch 00005: val_acc did not improve from 0.64698
+
+Epoch 00005: ReduceLROnPlateau reducing learning rate to 0.00010000000474974513.
+Epoch 6/1000
+ - 13s - loss: -1.7171e+19 - acc: 0.5931 - val_loss: -1.7637e+19 - val_acc: 0.6331
+
+Epoch 00006: val_acc did not improve from 0.64698
+Epoch 7/1000
+ - 13s - loss: -1.8658e+19 - acc: 0.5942 - val_loss: -1.9115e+19 - val_acc: 0.6320
+Using TensorFlow backend.
+/cluster/apps/python/3.7.4_gpu_gcc630/x86_64/lib64/python3.7/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+Epoch 00007: val_acc did not improve from 0.64698
+Epoch 00007: early stopping
+Test f1 score : 0.18113471632091976 
+Test accuracy score : 0.8276082587246483 

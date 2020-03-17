@@ -1,0 +1,235 @@
+Sender: LSF System <lsfadmin@lo-s4-032>
+Subject: Job 5192170: <Job2> in cluster <leonhard> Done
+
+Job <Job2> was submitted from host <lo-login-02> by user <cleclei> in cluster <leonhard> at Fri Mar 13 14:04:30 2020
+Job was executed on host(s) <lo-s4-032>, in queue <gpu.4h>, as user <cleclei> in cluster <leonhard> at Fri Mar 13 14:04:54 2020
+</cluster/home/cleclei> was used as the home directory.
+</cluster/home/cleclei/Project1/ECG_Heartbeat_Classification/code> was used as the working directory.
+Started at Fri Mar 13 14:04:54 2020
+Terminated at Fri Mar 13 14:06:06 2020
+Results reported at Fri Mar 13 14:06:06 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python fc_ptbdb.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   80.43 sec.
+    Max Memory :                                 2071 MB
+    Average Memory :                             1693.20 MB
+    Total Requested Memory :                     10000.00 MB
+    Delta Memory :                               7929.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                21
+    Run time :                                   77 sec.
+    Turnaround time :                            96 sec.
+
+The output (if any) follows:
+
+2020-03-13 14:04:59.227139: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-03-13 14:05:06.323303: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-03-13 14:05:06.407011: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:08:00.0
+2020-03-13 14:05:06.407086: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-03-13 14:05:06.436473: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-03-13 14:05:06.453271: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-03-13 14:05:06.461293: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-03-13 14:05:06.488642: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-03-13 14:05:06.496762: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-03-13 14:05:06.552908: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-13 14:05:06.560013: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-03-13 14:05:06.569236: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2199885000 Hz
+2020-03-13 14:05:06.569434: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x61909a0 executing computations on platform Host. Devices:
+2020-03-13 14:05:06.569460: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2020-03-13 14:05:06.799518: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x61a7280 executing computations on platform CUDA. Devices:
+2020-03-13 14:05:06.799557: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): GeForce GTX 1080 Ti, Compute Capability 6.1
+2020-03-13 14:05:06.802432: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:08:00.0
+2020-03-13 14:05:06.802501: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-03-13 14:05:06.802530: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-03-13 14:05:06.802549: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-03-13 14:05:06.802566: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-03-13 14:05:06.802583: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-03-13 14:05:06.802599: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-03-13 14:05:06.802617: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-13 14:05:06.810309: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-03-13 14:05:06.811394: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-03-13 14:05:08.032996: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-03-13 14:05:08.033044: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-03-13 14:05:08.033059: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-03-13 14:05:08.040725: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10407 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:08:00.0, compute capability: 6.1)
+2020-03-13 14:05:11.619547: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+Model: "model_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 187, 1)            0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 187)               0         
+_________________________________________________________________
+pre_dense_1 (Dense)          (None, 100)               18800     
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 100)               0         
+_________________________________________________________________
+pre_dense_2 (Dense)          (None, 200)               20200     
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 200)               0         
+_________________________________________________________________
+pre_dense_3 (Dense)          (None, 200)               40200     
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 200)               0         
+_________________________________________________________________
+pre_dense_4 (Dense)          (None, 200)               40200     
+_________________________________________________________________
+dropout_4 (Dropout)          (None, 200)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 64)                12864     
+_________________________________________________________________
+dense_2 (Dense)              (None, 64)                4160      
+_________________________________________________________________
+dense_3_ptbdb (Dense)        (None, 1)                 65        
+=================================================================
+Total params: 136,489
+Trainable params: 136,489
+Non-trainable params: 0
+_________________________________________________________________
+Train on 10476 samples, validate on 1165 samples
+Epoch 1/1000
+ - 3s - loss: 0.4107 - acc: 0.8044 - val_loss: 0.3598 - val_acc: 0.8412
+
+Epoch 00001: val_acc improved from -inf to 0.84120, saving model to ./models/fc_ptbdb.h5
+Epoch 2/1000
+ - 2s - loss: 0.3241 - acc: 0.8557 - val_loss: 0.2710 - val_acc: 0.8815
+
+Epoch 00002: val_acc improved from 0.84120 to 0.88155, saving model to ./models/fc_ptbdb.h5
+Epoch 3/1000
+ - 2s - loss: 0.2743 - acc: 0.8842 - val_loss: 0.2302 - val_acc: 0.8961
+
+Epoch 00003: val_acc improved from 0.88155 to 0.89614, saving model to ./models/fc_ptbdb.h5
+Epoch 4/1000
+ - 2s - loss: 0.2430 - acc: 0.8962 - val_loss: 0.2253 - val_acc: 0.8979
+
+Epoch 00004: val_acc improved from 0.89614 to 0.89785, saving model to ./models/fc_ptbdb.h5
+Epoch 5/1000
+ - 2s - loss: 0.2221 - acc: 0.9044 - val_loss: 0.2120 - val_acc: 0.9090
+
+Epoch 00005: val_acc improved from 0.89785 to 0.90901, saving model to ./models/fc_ptbdb.h5
+Epoch 6/1000
+ - 2s - loss: 0.2003 - acc: 0.9176 - val_loss: 0.2123 - val_acc: 0.9133
+
+Epoch 00006: val_acc improved from 0.90901 to 0.91330, saving model to ./models/fc_ptbdb.h5
+Epoch 7/1000
+ - 2s - loss: 0.1852 - acc: 0.9242 - val_loss: 0.1876 - val_acc: 0.9202
+
+Epoch 00007: val_acc improved from 0.91330 to 0.92017, saving model to ./models/fc_ptbdb.h5
+Epoch 8/1000
+ - 2s - loss: 0.1735 - acc: 0.9279 - val_loss: 0.1651 - val_acc: 0.9219
+
+Epoch 00008: val_acc improved from 0.92017 to 0.92189, saving model to ./models/fc_ptbdb.h5
+Epoch 9/1000
+ - 2s - loss: 0.1621 - acc: 0.9332 - val_loss: 0.1552 - val_acc: 0.9348
+
+Epoch 00009: val_acc improved from 0.92189 to 0.93476, saving model to ./models/fc_ptbdb.h5
+Epoch 10/1000
+ - 2s - loss: 0.1519 - acc: 0.9371 - val_loss: 0.1455 - val_acc: 0.9356
+
+Epoch 00010: val_acc improved from 0.93476 to 0.93562, saving model to ./models/fc_ptbdb.h5
+Epoch 11/1000
+ - 2s - loss: 0.1453 - acc: 0.9394 - val_loss: 0.1581 - val_acc: 0.9348
+
+Epoch 00011: val_acc did not improve from 0.93562
+Epoch 12/1000
+ - 2s - loss: 0.1322 - acc: 0.9435 - val_loss: 0.1795 - val_acc: 0.9339
+
+Epoch 00012: val_acc did not improve from 0.93562
+Epoch 13/1000
+ - 2s - loss: 0.1334 - acc: 0.9429 - val_loss: 0.1409 - val_acc: 0.9494
+
+Epoch 00013: val_acc improved from 0.93562 to 0.94936, saving model to ./models/fc_ptbdb.h5
+Epoch 14/1000
+ - 2s - loss: 0.1204 - acc: 0.9512 - val_loss: 0.1672 - val_acc: 0.9451
+
+Epoch 00014: val_acc did not improve from 0.94936
+Epoch 15/1000
+ - 2s - loss: 0.1160 - acc: 0.9546 - val_loss: 0.1597 - val_acc: 0.9416
+
+Epoch 00015: val_acc did not improve from 0.94936
+Epoch 16/1000
+ - 1s - loss: 0.1133 - acc: 0.9561 - val_loss: 0.1270 - val_acc: 0.9494
+
+Epoch 00016: val_acc did not improve from 0.94936
+
+Epoch 00016: ReduceLROnPlateau reducing learning rate to 0.00010000000474974513.
+Epoch 17/1000
+ - 2s - loss: 0.0748 - acc: 0.9717 - val_loss: 0.1005 - val_acc: 0.9631
+
+Epoch 00017: val_acc improved from 0.94936 to 0.96309, saving model to ./models/fc_ptbdb.h5
+Epoch 18/1000
+ - 1s - loss: 0.0639 - acc: 0.9757 - val_loss: 0.0982 - val_acc: 0.9597
+
+Epoch 00018: val_acc did not improve from 0.96309
+Epoch 19/1000
+ - 2s - loss: 0.0613 - acc: 0.9761 - val_loss: 0.1005 - val_acc: 0.9622
+
+Epoch 00019: val_acc did not improve from 0.96309
+Epoch 20/1000
+ - 2s - loss: 0.0568 - acc: 0.9784 - val_loss: 0.0989 - val_acc: 0.9639
+
+Epoch 00020: val_acc improved from 0.96309 to 0.96395, saving model to ./models/fc_ptbdb.h5
+Epoch 21/1000
+ - 2s - loss: 0.0542 - acc: 0.9795 - val_loss: 0.0995 - val_acc: 0.9648
+
+Epoch 00021: val_acc improved from 0.96395 to 0.96481, saving model to ./models/fc_ptbdb.h5
+Epoch 22/1000
+ - 2s - loss: 0.0517 - acc: 0.9805 - val_loss: 0.1013 - val_acc: 0.9631
+
+Epoch 00022: val_acc did not improve from 0.96481
+Epoch 23/1000
+ - 2s - loss: 0.0519 - acc: 0.9808 - val_loss: 0.0934 - val_acc: 0.9648
+
+Epoch 00023: val_acc did not improve from 0.96481
+Epoch 24/1000
+ - 1s - loss: 0.0511 - acc: 0.9806 - val_loss: 0.1002 - val_acc: 0.9657
+
+Epoch 00024: val_acc improved from 0.96481 to 0.96567, saving model to ./models/fc_ptbdb.h5
+Epoch 25/1000
+ - 2s - loss: 0.0491 - acc: 0.9817 - val_loss: 0.0954 - val_acc: 0.9700
+
+Epoch 00025: val_acc improved from 0.96567 to 0.96996, saving model to ./models/fc_ptbdb.h5
+Epoch 26/1000
+ - 2s - loss: 0.0471 - acc: 0.9833 - val_loss: 0.0971 - val_acc: 0.9691
+
+Epoch 00026: val_acc did not improve from 0.96996
+Epoch 27/1000
+ - 2s - loss: 0.0452 - acc: 0.9849 - val_loss: 0.0986 - val_acc: 0.9674
+
+Epoch 00027: val_acc did not improve from 0.96996
+Epoch 28/1000
+ - 2s - loss: 0.0479 - acc: 0.9829 - val_loss: 0.1083 - val_acc: 0.9622
+
+Epoch 00028: val_acc did not improve from 0.96996
+
+Epoch 00028: ReduceLROnPlateau reducing learning rate to 1.0000000474974514e-05.
+Epoch 29/1000
+ - 2s - loss: 0.0449 - acc: 0.9830 - val_loss: 0.1024 - val_acc: 0.9631
+
+Epoch 00029: val_acc did not improve from 0.96996
+Epoch 30/1000
+ - 2s - loss: 0.0406 - acc: 0.9844 - val_loss: 0.0998 - val_acc: 0.9657
+Using TensorFlow backend.
+
+Epoch 00030: val_acc did not improve from 0.96996
+Epoch 00030: early stopping
+ROC_PRC score : 0.9956105767089726
+Roc_AUC_score : 0.991120352739577
+Test f1 score : 0.9789775441949355 
+Test accuracy score : 0.9697698385434559 
